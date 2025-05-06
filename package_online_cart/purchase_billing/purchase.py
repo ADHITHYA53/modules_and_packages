@@ -4,10 +4,8 @@ def purchase():
     if not product_list:
         print("No products to purchase.")
         return
-    
     display_product()
     cart = []
-
     while True:
         name = input("Enter product name to buy (or 'done' to checkout): ")
         if name.lower() == 'done':
@@ -29,7 +27,6 @@ def purchase():
     if not cart:
         print("Cart is empty.")
         return
-
     print("\n --- BILL ---")
     total = 0
     for item in cart:
