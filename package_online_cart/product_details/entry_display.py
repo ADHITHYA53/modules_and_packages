@@ -1,12 +1,10 @@
-product_list=[]  # empty list to store the data
-
+product_list=[] 
 def add_product():
     name = input("Enter the name of the product :")
     price = float(input("Enter the price of the product :"))
     quantity = int(input("Enter product quantity :"))
     product_list.append({"Name" : name , "Price" : price, "Quantity" : quantity })
     print(f"{name} added successfully")
-
 def display_product():
     if not product:
         print("Product is not available")
